@@ -5,7 +5,7 @@ First of all - install node for your platform from [here](https://nodejs.org/en/
 
 Then, if you have git installed, create a directory for this project, open it in the console/terminal and type
 ```
-git clone https://github.com/ArroWsGM/Font-Awesome-5-Webpack-tree-shaking.git
+git clone https://github.com/ArroWsGM/fa5-subsetter.git
 ```
 or just download the archive, unzip and open project directory in the console.
 
