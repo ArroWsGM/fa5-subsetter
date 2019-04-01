@@ -7,7 +7,7 @@ Then, if you have git installed, create a directory for this project, open it in
 ```
 git clone https://github.com/ArroWsGM/fa5-subsetter.git
 ```
-or just download the archive, unzip and open project directory in the console.
+or just download the archive, unzip and open project directory in the console. Make sure, you in the right place: in this directory (fa5-subsetter) must present files ``package.json``, ``webpack.config.js`` etc.
 
 Type in the console
 ```
