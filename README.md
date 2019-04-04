@@ -7,7 +7,9 @@ Then, if you have git installed, create a directory for this project, open it in
 ```
 git clone https://github.com/ArroWsGM/fa5-subsetter.git
 ```
-or just download the archive, unzip and open project directory in the console. Make sure, you in the right place: in this directory (fa5-subsetter) must present files ``package.json``, ``webpack.config.js`` etc.
+or just download the archive, unzip and open project directory in the console.
+
+Make sure, you in the right place: in this directory (fa5-subsetter) must present files ``package.json``, ``webpack.config.js`` etc.
 
 Type in the console
 ```
@@ -17,6 +19,7 @@ and wait until node downloads all dependencies.
 
 Open ``src/font-awesome-5-custom-bundle.js`` in your favorite text editor and add/replace/delete icons:
 * icons distributed around 6 packages: ``@fortawesome/free-brands-svg-icons``, ``@fortawesome/free-regular-svg-icons``, ``@fortawesome/free-solid-svg-icons``, ``@fortawesome/pro-solid-svg-icons``, ``@fortawesome/pro-regular-svg-icons``, ``@fortawesome/pro-light-svg-icons``
+* all free packages ``@fortawesome/free-brands-svg-icons``, ``@fortawesome/free-regular-svg-icons``, ``@fortawesome/free-solid-svg-icons`` already installed with previous ``npm i`` command
 * to install package, type (for example, for brands icons pack)
 ```
 npm i -D @fortawesome/free-brands-svg-icons
@@ -27,7 +30,7 @@ npm un @fortawesome/free-brands-svg-icons
 ```
 * you can install all packages, it does not have any impact to final build size
 * to install a pro package you need to do some tweaks, as described [here](https://fontawesome.com/how-to-use/on-the-web/setup/using-package-managers) in ``Installing the Pro version of Font Awesome`` section
-* pro packages include all icons from corresponding free package, you don't need to include them both.
+* pro packages include all icons from corresponding free package, you don't need to include them both in the ``font-awesome-5-custom-bundle.js`` source file, there are comment in places, where you need to substitute packages
 * brands have no pro version, as same as light have no free package
 * all icons have a camel-cased names (for example: faGooglePlay for fa-google-play html class)
 * if you have a doubt about icon name spelling, take a look inside ``node_modules/@fortawesome`` folder, pick a folder with corresponding package name (but this is not necessarily, icons have the same names through regular, solid and light packages, but some of those icons may not exist in the free packages)
@@ -106,4 +109,4 @@ npm run build
 ```
 then grab your three-shaked Font Awesome build from dist directory
 
-This package already contains dist bundle with some frequently used icons
+This package already contains dist bundle with some frequently used icons, just open ``index.html`` and you can see it by yourself
