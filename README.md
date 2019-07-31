@@ -1,5 +1,5 @@
 # Webpack tree shaking for Font Awesome 5
-## For those who not familiar with modern frontend development and getting tired to wait for subsetter from FA team
+## For those who not familiar with modern frontend development ~and getting tired to wait for subsetter from FA team~  [it's here if you don't know (PRO only)](https://fontawesome.com/kits)
 ### Beginners guide
 First of all - install node for your platform from [here](https://nodejs.org/en/)
 
