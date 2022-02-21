@@ -1,5 +1,4 @@
 const path = require('path')
-const BabelMinifyPlugin = require('babel-minify-webpack-plugin')
 
 const config = {
     entry: {
@@ -27,14 +26,11 @@ module.exports = (env, options) => {
 
     config.devtool = mode
         ? false //'source-map'
-        : 'eval-sourcemap'
+        : 'eval-source-map'
 
     if (mode) {
         config.optimization = {
             minimize: true,
-            minimizer: [
-                new BabelMinifyPlugin()
-            ],
             usedExports: true,
             sideEffects: true
         }

@@ -19,9 +19,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "babel-loader": "^8.2.2",
-    "babel-minify-webpack-plugin": "^0.3.1",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
-  },
-  "dependencies": {}
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  }
 }
